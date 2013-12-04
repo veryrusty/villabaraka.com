@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Villa La Baraka</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <style type="text/css">
+    html { height: 100% }
+    body { height: 100%; margin: 0; padding: 0 }
+    #map_canvas { height: 100% }
+  </style>
+  <script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBdxSVcUEXuqc-4Z3QtGDRVnEBiuiuQkGs&sensor=false&language=en">
+  </script>
+  <script type="text/javascript">
+    function initialize() {
+      var mapcenter = new google.maps.LatLng(-20.281, 57.367);
+      var flicenflac = new google.maps.LatLng(-20.280232,57.370836);
+      var myOptions = {
+        zoom: 16,
+        center: mapcenter,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+      };
+      var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+      var baraka = new google.maps.LatLng(-20.282311,57.367108);
+      var marker = new google.maps.Marker({
+        position: baraka,
+        map: map,
+        title:"La Baraka"
+      });
+      var flicMarker = new google.maps.Marker({
+          position: flicenflac,
+          map: map,
+          title:"Flic en Flac"
+      });
+    }
+  </script>
+</head>
+<body onload="initialize()">
+  <h1>Welcome to La Baraka</h1>
+  <div id="map_canvas" style="width:40%; height:40%; float: left;"></div>
+  <div id="weather" style="width: 200px; height: 420px; float: right; margin: 0 0 0 10px">
+   <script type="text/javascript" src="http://www.yr.no/place/Mauritius/Other/Sofitel_Imperial_Mauritius/ekstern_boks_liten.js"></script> 
+  </div>
+  http://www.yr.no/place/Mauritius/Other/Sofitel_Imperial_Mauritius~6464827/external_box_large.html
+</body>
+</html>

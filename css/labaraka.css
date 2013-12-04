@@ -1,0 +1,36 @@
+body {
+  background: url(../photos/bg1.jpg) no-repeat left top;
+  background-size: 100%;
+}
+
+/* Header */
+#header {
+  display:block;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+/*  background: url(../photos/background.jpg) repeat-y left top; */
+  background-size: 100%	
+}
+
+#header #villa {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+#language {
+	float:right;
+	margin-top: 7px;
+}
+
+.relative{
+  position:relative;
+}
+
+.sail {
+  font-family: 'Sail', cursive;
+}
+
+.well {
+  background-color:#fff;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Villa La Baraka</title>
+                <meta name="description" content="La Baraka - bungalow / villa for rent in Flic en Flac, Mauritius">
+                <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>           
+                <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"/>                
+                <link rel="stylesheet" type="text/css" href="css/labaraka.css"/>
+    <script src="js/LAB.min.js"></script>
+                <script src="http://maps.googleapis.com/maps/api/js?key=&sensor=false&language=en">
+                </script>
+                <link href='http://fonts.googleapis.com/css?family=Sail' rel='stylesheet' type='text/css'>
+        </head>
+  <body>
+        
+        <header>
+                <div id="header">
+                  <div class="container relative">
+                                <div class="row">
+                                        <div class="span12">
+                                                <div style="float: left; margin-left: 20px;">
+                                                <h1 class="sail" id="villa">La Baraka</h1>
+                                                </div>
+                                                <div style="padding-top: 10px; float: left; margin-left: 20px;">
+                                                        <p>Flic en Flac</p>
+                                                <p>Mauritius</p>
+                        </div>
+                                        </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        
+
+  <div class="container">
+          <div id="language">
+                  <div class="btn-group">
+                        <a class="btn btn-mini" href="#">En</a>
+                        <a class="btn btn-mini" href="#">Fr</a>
+      </div>
+    </div>
+          <div id="myTab" class="tabbable">
+                        <ul class="nav nav-tabs">
+                                <li class="active"><a href="#index" data-toggle="tab">Photos</a></li>
+                                <li><a href="#details" data-toggle="tab">Details</a></li>
+                                <li><a href="#mauritius" data-toggle="tab">About Mauritius</a></li>
+                                <li><a href="#contact" data-toggle="tab">Contact Us</a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="index">
+                                  <div class="row">
+                                          <div class="span1">&nbsp;</div>
+                                        <div class="span10">
+                                                        <div id="myCarousel" class="carousel slide">
+                                                          <!-- Carousel items -->
+                                                          <div class="carousel-inner">
+                                                            <div class="item active"><img src="photos/image1.jpg" alt=""></div>
+                                                            <div class="item"><img src="photos/image3.jpg" alt=""></div>
+                                                            <div class="item"><img src="photos/image2.jpg" alt=""></div>
+                                                            <div class="item"><img src="photos/image8.jpg" alt=""></div>
+                                                          </div>
+                                                          <!-- Carousel nav -->
+                                                          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                                                          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                                                        </div>
+                                                </div>
+          </div>
+                          </div>
+                    <div class="tab-pane" id="details">
+                            <div class="row">
+                                    <div class="span9">
+                                                        <h3>Accomodation</h3>
+                                                        <p>La Baraka is a four bedroom bungalow (holiday house) located in Flic en Flac,
+                                                        one of the most beautiful beaches in Mauritius. It is a mere 300 metres
+                                                        from the public beach with easy access to a supermarket and a wide range
+                                                        of restaurants and shops. There is easy access to public transport.</p>
+
+                                                        <h3>Amenities</h3>
+
+                                                        <p>4 fully furnished bedrooms, 1 bathroom and 1 separate toilet,
+                                                        kitchen, lounge, dining area, veranda. 1 undercover garage and
+                                                        space for additional cars.</p>
+
+                                                        <ul>
+                                                                <li>Swimming pool (includes a kids area)</li>
+                                                          <li>Air conditioning</li>
+                                                          <li>24 hours Gatekeeper</li>
+                                                          <li>Satellite TV</li>
+                                                          <li>Charcoal BBQ</li>
+              </ul>
+                                                        <p>Housekeeping and home cooked Mauritian cuisine meals available (at additional costs)</p>
+            </div>
+            <div class="span3">
+                  <ul class="thumbnails">
+                      <li class="thumbnail"><img src="photos/inner_thumb1.jpg" alt=""></li>
+                      <li class="thumbnail"><img src="photos/inner_thumb2.jpg" alt=""></li>
+                      <li class="thumbnail"><img src="photos/inner_thumb3.jpg" alt=""></li>
+                          </ul>
+                  </div>
+          </div>
+                    </div>
+                    <div class="tab-pane" id="mauritius">
+          <div class="row">
+                  <div class="span6">
+                        <div class="well">
+                            <h3>Tourism Information</h3>
+                <ul>
+                                                                  <li>http://www.mauritius.net/index.php</li>
+                                                                  <li>http://mauritius.voyaz.com/index.htm</li>
+                                                                  <li>http://mauritiusattractions.com/</li>
+                                                                  <li>http://www.tourism-mauritius.mu/index.php</li>
+                                                                </ul>
+                                                                <h3>Things to see and do</h3>
+                <ul>
+                                                                  <li>http://mauritiusattractions.com/national-holidays-and-festivals-i-39.html</li>
+                                                                  <li>http://www.tropicscope.com/mauritius/tours_and_excursions/</li>
+                                                                </ul>
+                                                                <h3>Restaurants</h3>
+                                                                <ul>
+                                                                        <li>http://restaurants.mu/</li>
+                                                                </ul>
+                                                                <h3>Essential Services</h3>
+                <ul>
+                                                                <li>http://mauritius.voyaz.com/essential_services.htm</li>
+                </ul>
+                          </div>
+                  </div>
+                      <div class="span6">
+                    <div class="well">
+                      <div id="map_canvas" style="width:100%; height:300px;"></div>
+              </div>
+            </div>
+                </div>          
+                    </div>
+                    <div class="tab-pane" id="contact">
+                                        <div class="row">
+                                                <div class="span9">
+                                                  <h3>Contact La Baraka</h3>
+                                                        <p>For further details, pricing and/or availability email
+                 <a href='mai&#108;to&#58;%6&#50;ar%61kaf&#37;&#54;C&#105;%&#54;3en%66lac&#64;&#37;&#54;7mail%&#50;E&#99;o&#109;'>b&#97;ra&#107;aflicenf&#108;ac&#64;gmail&#46;com</a>
+                                                        </p>
+                                                </div>
+                                                <div class="span3">
+                                                        <ul class="thumbnails">
+                      <li class="thumbnail"><img src="photos/thumb1.jpg" alt="Flic en Flac beach"></li>
+                      <li class="thumbnail"><img src="photos/thumb2.jpg" alt=""></li>
+                      <li class="thumbnail"><img src="photos/thumb4.jpg" alt=""></li>
+                          </ul>
+                                                </div>
+                                        <div>
+                    </div>
+                        </div>
+                </div>
+        </div>
+        
+        <script>
+          $LAB
+          .script("js/jquery-1.7.1.min.js").wait()
+          .script("js/bootstrap.min.js")
+          .script("js/bootstrap-tab.js")
+          .script("js/bootstrap-carousel.js")
+          .wait(function() {
+                        $('#myCarousel').carousel();
+            $('#myTab').tab('show');
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyBdxSVcUEXuqc-4Z3QtGDRVnEBiuiuQkGs&sensor=false&callback=map_init";
+            document.body.appendChild(script);
+          });
+        </script>
+  <script>
+    function map_init() {
+      var baraka = new google.maps.LatLng(-20.282311,57.367108);
+      var myOptions = {
+        zoom: 9,
+        center: baraka,
+        mapTypeId: google.maps.MapTypeId.SATELLITE,
+        style: [ { feature: 'all' } ]
+      };
+      var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+      var marker = new google.maps.Marker({
+        position: baraka,
+        map: map,
+        title:"La Baraka"
+      });
+      $('a[data-toggle="tab"]').on('shown', function (e) {
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(baraka);
+      });              
+    };
+          </script>
+        </body>
+</html>
